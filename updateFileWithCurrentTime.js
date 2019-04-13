@@ -4,7 +4,7 @@ var filename = process.argv[2]
 var obj = {
     mailRecievedTable: []
 };
-const path = './' + filename
+const path = filename
 
 
 if (require.main === module) {
