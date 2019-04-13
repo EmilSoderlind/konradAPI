@@ -7,8 +7,8 @@ const filename = process.argv[2]
 app.get('/', (req, res) => {
     
     try {
-        let rawdata = fs.readFileSync(filename)
-        let mailData = JSON.parse(rawdata)
+        var rawdata = fs.readFileSync(filename)
+        var mailData = JSON.parse(rawdata)
         res.send(mailData)
     }catch (error) {
         console.error(error);
